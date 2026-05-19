@@ -13,14 +13,14 @@ La idea es usar este repo como punto de partida: agregas tu stack (Node, Python,
 ## Que trae este starter
 
 - Devcontainer: [`.devcontainer/devcontainer.json`](.devcontainer/devcontainer.json)
-	- Base Debian Bullseye.
-	- Feature de Docker-in-Docker habilitada.
-	- Preparado para ejecutar `docker` dentro del entorno de desarrollo.
+ 	- Base Debian Bullseye.
+ 	- Feature de Docker-in-Docker habilitada.
+ 	- Preparado para ejecutar `docker` dentro del entorno de desarrollo.
 - Deploy workflow: [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
-	- Ejecuta en push a `main`.
-	- Llama al workflow de publish.
+ 	- Ejecuta en push a `main`.
+ 	- Llama al workflow de publish.
 - Docker publish workflow: [`.github/workflows/docker-publish.yml`](.github/workflows/docker-publish.yml)
-	- Construye y publica imagen multi-arquitectura (`amd64`, `arm64`) en `ghcr.io/<owner>/<repo>`.
+ 	- Construye y publica imagen multi-arquitectura (`amd64`, `arm64`) en `ghcr.io/<owner>/<repo>`.
 
 ## Archivos de ejemplo
 
