@@ -5,7 +5,7 @@ services:
     # Ajusta el build/contexto a tu proyecto real.
     build:
       context: ..
-      dockerfile: samples/Dockerfile.sample
+      dockerfile: samples/Dockerfile
     image: starter-app:dev
     ports:
       - "3000:3000"

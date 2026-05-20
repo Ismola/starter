@@ -7,13 +7,13 @@ on:
       - main
 
 jobs:
-  # test:
-  #   uses: ./.github/workflows/test.yml
+  test:
+    uses: ./.github/workflows/test.yml
 
   # DOCKER PUBLISH
   # Si quieres deshabilitarlo, descomenta la línea: if: false
   docker-publish:
-    # needs: test
+    needs: test
     # if: false  # Descomenta para deshabilitar
     permissions:
       contents: read
@@ -23,11 +23,9 @@ jobs:
     uses: ./.github/workflows/docker-publish.yml
 
   notify-webhook:
-    needs: [
-      # test,
-       docker-publish]
+    needs: [test, docker-publish]
     runs-on: ubuntu-latest
-    if: success()  # Solo se ejecuta si los jobs anteriores fueron exitosos
+    if: success() # Solo se ejecuta si los jobs anteriores fueron exitosos
     steps:
       - name: Webhook to Service
         run: |

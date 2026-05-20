@@ -24,8 +24,8 @@ La idea es usar este repo como punto de partida: agregas tu stack (Node, Python,
 
 ## Archivos de ejemplo
 
-- Compose de ejemplo: [`samples/docker-compose.sample.yml`](samples/docker-compose.sample.yml)
-- Dockerfile de ejemplo: [`samples/Dockerfile.sample`](samples/Dockerfile.sample)
+- Compose de ejemplo: [`samples/docker-compose.yml`](samples/docker-compose.yml)
+- Dockerfile de ejemplo: [`samples/Dockerfile`](samples/Dockerfile)
 
 Estos archivos son solo referencia. Puedes copiarlos/adaptarlos a:
 
